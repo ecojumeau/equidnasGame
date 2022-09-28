@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>👾Equidnas: an online monster battle game.</title>
+        <script src="./js/equidnas.js"></script>
     </head>
     <body>
         <h1>👾 Equidnas Battle</h1>
@@ -19,7 +20,7 @@
             <label for="tarsier">Tarsier</label>
             <input type="radio" name="monster" id="tarsier"/>
             
-            <button>Select monster</button>
+            <button id="selMonster-button">Select monster</button>
         </section>
 
         <section id="selAttack-section">
@@ -29,9 +30,9 @@
             <p>Enemy's monster has <span>3</span> lives</p>
             
             <p>
-                <button>Fire 🔥</button>
-                <button>Water 💦</button>
-                <button>Earth 🍃</button>
+                <button id="fireButton">Fire 🔥</button>
+                <button id="waterButton">Water 💦</button>
+                <button id="earthButton">Earth 🍃</button>
             </p>
         </section>
 
@@ -40,7 +41,7 @@
         </section>
 
         <section id="restartGame-section">
-            <button>Restart game</button>
+            <button id="restartButton">Restart game</button>
         </section>
     </body>
 </html>
