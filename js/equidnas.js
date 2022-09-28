@@ -7,13 +7,14 @@ function selPlayerMonster() {
     let inputPotoo = document.getElementById('potoo')
     let inputBubbles = document.getElementById('bubbles')
     let inputTarsier = document.getElementById('tarsier')
+    let spanPlayerMonster = document.getElementById('playerMonster')
 
     if (inputPotoo.checked) {
-        alert("You choose Potoo")
+        spanPlayerMonster.innerHTML = "Potoo"
     } else if (inputBubbles.checked) {
-        alert("You choose Bubbles")
+        spanPlayerMonster.innerHTML = "Bubbles"
     } else if (inputTarsier.checked) {
-        alert("You choose Tarsier")
+        spanPlayerMonster.innerHTML = "Tarsier"
     } else {
         alert("Choose a monster to continue, please")
     }
